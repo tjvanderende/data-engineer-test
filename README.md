@@ -1,6 +1,6 @@
 # AVROTROS Data test
 
-## facebook test
+## Facebook test
 In deze repository vind je een bestand met de naam `eenvandaag_page_metrics.json` 
 Dit is een bestand met een response van de [facebook graph api][facebook_graph_api_docs]. 
 Maak een script/applicatie die de data in het bestand transformeert naar een bestandsformaat dat in Bigquery geïmporteerd kan worden. 
@@ -13,7 +13,7 @@ De data moet op het laagste aggregatieniveau opgeslagen worden. Hier is een lijs
 
 Het script mag in de programmeertaal waar je comfortabel mee bent. We willen de name, period, end_time en value van elke metric in het eindbestand zien.
 
-Wat dingen om op te letten:
+Een aantal dingen om op te letten:
 * Niet alle metics hebben een end_time
 * Sommige metrics hebben een object als value
 
