@@ -3,13 +3,8 @@
 ## Facebook test
 In deze repository vind je een bestand met de naam `eenvandaag_page_metrics.json` 
 Dit is een bestand met een response van de [facebook graph api][facebook_graph_api_docs]. 
-Maak een script/applicatie die de data in het bestand transformeert naar een bestandsformaat dat in Bigquery geïmporteerd kan worden. 
-De data moet op het laagste aggregatieniveau opgeslagen worden. Hier is een lijst van [data types][big_query_batch_loading]:
-* Avro
-* Comma-separated values (CSV)
-* JSON (newline-delimited)
-* ORC
-* Parquet
+Maak een script/applicatie die de data in het bestand transformeert naar CSV, die zonder verdere aanpassingen in Bigquery geïmporteerd kan worden.  
+De data moet op het laagste aggregatieniveau opgeslagen worden. 
 
 Het script mag in de programmeertaal waar je comfortabel mee bent. We willen de name, period, end_time en value van elke metric in het eindbestand zien.
 
