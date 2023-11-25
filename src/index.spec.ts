@@ -33,6 +33,7 @@ describe('Export', () => {
       const preparedData = exporter.prepare();
       const formattedData = exporter.format(exportRule, preparedData);
       const expected = [
+        "name,period,values,title,description,id,value,end_time",
         "page_actions_post_reactions_anger_total,day,\"\",Daily total post anger reactions of a page.,Daily: total post anger reactions of a page.,167638236597192/insights/page_actions_post_reactions_anger_total/day,26,2022-02-04T08:00:00+0000,",
         "page_actions_post_reactions_anger_total,day,\"\",Daily total post anger reactions of a page.,Daily: total post anger reactions of a page.,167638236597192/insights/page_actions_post_reactions_anger_total/day,17,2022-02-05T08:00:00+0000,",
         "page_actions_post_reactions_anger_total,day,\"\",Daily total post anger reactions of a page.,Daily: total post anger reactions of a page.,167638236597192/insights/page_actions_post_reactions_anger_total/day,15,2022-02-06T08:00:00+0000,"

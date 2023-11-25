@@ -38,9 +38,12 @@ export class Exporter implements Exportable {
    * @returns 
    */
   format(rule: RuleStrategy, preparedData: Unwind[]): string[] {
-    return preparedData.map((unwinded) => {
+    let data = [rule.getHeader(preparedData[0])]
+    data = [...data, ...preparedData.map((unwinded) => {
       return rule.ruleExport(unwinded);
-    });
+    })]
+    
+    return data;
   }
   
   /**

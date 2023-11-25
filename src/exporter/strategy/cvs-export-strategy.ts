@@ -9,6 +9,11 @@ export class CsvExportStrategy implements RuleStrategy {
     this._columnHeaders = columnHeaders;
   }
 
+  getHeader(unwind: Unwind): string {
+    const headers = Object.keys(unwind);
+    return (this._columnHeaders ?? headers).join(this._delimeter);
+  }
+
   ruleExport(unwinded: Unwind): string {
     const unwindedIndex: Record<string, any> = unwinded;
     const valueKeys = this._columnHeaders ?? Object.keys(unwinded);

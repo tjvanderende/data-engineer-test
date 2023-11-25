@@ -12,7 +12,7 @@ const importData = (): PageMetricGroup[] => {
  * Simple example usage
  */
 const data = importData();
-const exportRule: RuleStrategy = new CsvExportStrategy(";");
+const exportRule: RuleStrategy = new CsvExportStrategy(";", ["id", "title", "description", "metric", "period", "endTime", "value"]);
 const exporter: Exportable = new Exporter(data);
 
 const preparedData = exporter.prepare();
